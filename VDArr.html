@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let value = prompt("Nhap cac phan tu trong mang");
+        let Arr = [];
+
+        while (value != "q") {
+            Arr.push(value);
+            value = prompt("Nhap cac phan tu trong mang");
+        }
+
+        let CheckArr= prompt("nhap tu ban phim phan tu can check");
+        flag = false;
+        for(let i=0;i<=Arr.length-1;i++)
+        {
+            if(CheckArr==Arr[i]){
+                flag=true;
+            }
+        }
+      if(flag){
+        alert("co pt trong mang");
+      }
+      else{
+        alert("khong co phan tu trong mang");
+      }
+    </script>
+</body>
+
+</html>
